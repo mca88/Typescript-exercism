@@ -1,3 +1,5 @@
+
+// @ts-ignore
 import { describe, xdescribe, it, expect, xit } from '@jest/globals'
 import { colorCode, COLORS } from './resistor-color.ts'
 
@@ -6,17 +8,17 @@ describe('color code', () => {
     expect(colorCode('black')).toEqual(0)
   })
 
-  xit('White', () => {
+  it('White', () => {
     expect(colorCode('white')).toEqual(9)
   })
 
-  xit('Orange', () => {
+  it('Orange', () => {
     expect(colorCode('orange')).toEqual(3)
   })
 })
 
-xdescribe('Colors', () => {
-  xit('returns all colors', () => {
+describe('Colors', () => {
+  it('returns all colors', () => {
     expect(COLORS).toEqual([
       'black',
       'brown',

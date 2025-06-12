@@ -1,5 +1,16 @@
-export const colorCode = () => {
-  throw new Error('Delete this line and implement this function')
-}
+type Color = typeof COLORS[number]
 
-export const COLORS = undefined
+export const colorCode = (color : Color) => COLORS.indexOf(color);
+
+export const COLORS = [
+    'black',
+    'brown',
+    'red',
+    'orange',
+    'yellow',
+    'green',
+    'blue',
+    'violet',
+    'grey',
+    'white',
+] as const
