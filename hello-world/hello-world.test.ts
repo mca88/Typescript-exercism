@@ -1,4 +1,3 @@
-// @ts-ignore
 import { describe, it, expect } from '@jest/globals'
 import { hello } from './hello-world.ts'
 
